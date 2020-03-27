@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 LABEL maintainer "Tobias Verbeke <tobias.verbeke@openanalytics.eu>"
 
-RUN apt-get update && apt-get install -y python python-pip
+RUN apt-get update && apt-get install -y python3.6 python3.6-dev python3.6-pip
 
 # Dash and dependencies
 RUN pip install dash==0.36.0  # The core dash backend
